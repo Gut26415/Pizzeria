@@ -11,10 +11,10 @@ public class Pizza {
         this.tamanio = tamanio;
         this.precio = precio;
         this.ingredientes = ingredientes;
-        disponibilidad = true;
+        this.disponibilidad = true;
     }
 
-    public void horenar(){
+    public void hornear(){
         System.out.println("Horneando la pizza "+nombre);
     }
 
@@ -33,7 +33,46 @@ public class Pizza {
     public void quitarIngrediente(Ingrediente ingrediente){
         System.out.println("quitando el ingrediente "+ingrediente);
     }
-    
 
+    // Getter Setter
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getTamanio() {
+        return tamanio;
+    }
+
+    public void setTamanio(String tamanio) {
+        this.tamanio = tamanio;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public Ingrediente[] getIngredientes() {
+        return ingredientes;
+    }
+
+    public void setIngredientes(Ingrediente[] ingredientes) {
+        this.ingredientes = ingredientes;
+    }
+
+    public boolean getDisponibilidad() {
+        return disponibilidad;
+    }
+
+    public void setDisponibilidad(boolean disponibilidad) {
+        this.disponibilidad = disponibilidad;
+    }
 }
