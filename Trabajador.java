@@ -1,6 +1,7 @@
 import java.time.LocalDate;
+import interfaces.InterfaceTrabajador;
 
-public class Trabajador extends Usuario {
+public class Trabajador extends Usuario implements InterfaceTrabajador {
 
     public enum Puesto {
         GERENTE,
@@ -23,8 +24,10 @@ public class Trabajador extends Usuario {
 
     public void tomarPedido() {}
 
+    @Override
     public void ingresar() {}
 
+    @Override
     public void salir() {}
 
     public void entregarPizza(Pizza pizza) {}

@@ -1,5 +1,8 @@
 package interfaces;
 
-public class InterfaceTrabajador {
+public interface InterfaceTrabajador {
+    
+    void ingresar();
+    void salir();
     
 }
