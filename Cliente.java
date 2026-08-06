@@ -1,4 +1,6 @@
-public class Cliente {
+import java.time.LocalDate;
+
+public class Cliente extends Usuario{
 
      enum TipoCliente{
         TRADICIONAL, 
@@ -12,7 +14,12 @@ public class Cliente {
     private Pedido pedido;
     private TipoCliente tipoCliente;
 
-    public Cliente(int puntos, TipoCliente tipoCliente, Pedido pedido){
+    public Cliente(int id, String nombre, LocalDate fechaNacimiento,
+                   String telefono, String direccion, int puntos, 
+                   TipoCliente tipoCliente, Pedido pedido) {
+
+        super(id, nombre, fechaNacimiento, telefono, direccion);
+
         this.puntos = puntos;
         this.tipoCliente = tipoCliente;
         this.pedido = pedido;
